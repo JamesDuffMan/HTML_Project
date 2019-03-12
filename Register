@@ -1,1 +1,109 @@
-rtyuiop[
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mowie</title>
+    </head>
+<body>
+<header>
+		<div class="main-menu">
+			<div class="navbar-header">
+            </div>
+			<div class="collapse navbar-collapse" id="collapse-bar">
+				<div class="navbar main-menu">
+					<ul class="header-list" style="list-style-type:none">
+						<li class="horizontal"><a id="a" href="#">Home</a></li>
+						<li class="horizontal"><a id="a"  href="About.html">About</a></li>
+						<li class="horizontal"><a id="a"  href="Parts.html">Private Policy</a></li>
+						<li class="horizontal"><a id="a"  href="Contact.html">Contact Us</a></li>
+					</ul>
+				</div>			
+			</div>
+
+		</div>
+	</header>
+	<div id="clear"></div>
+
+	<section>
+
+
+            <form id='register' action='register.php' method='post' 
+            accept-charset='UTF-8'>
+        <fieldset >
+        <legend>Register</legend>
+        <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+
+        <label for='name' >Your Full Name: </label> <br>
+      
+        <input type='text' name='name' id='name' maxlength="50" required />
+        <br>
+        <label for='age'>Enter your age:</label><br>
+      
+        <input type="number" max="100" min="18" name="age" required>
+        <br>
+        <label for='email' >Email Address:</label><br>
+        
+        <input type='text' name='email' id='email' maxlength="50" required />
+        <br>
+        <label for='username' >UserName:</label><br>
+        <input type='text' name='username' id='username' maxlength="50" required/>
+        <br>
+
+        <label for='password' >Password:</label><br>
+        <input type='password' name='password' id='password' minlength ="8" maxlength="50" required/>
+
+            
+        <br><br>
+        
+        
+       
+        
+
+    
+          <br> <p1>Please select your preferred gender(s)!</p>
+            <div id="checkboxes">
+                    <div class="checkboxgroup">
+                        <label for="Female">Female</label>
+                        <input type="checkbox" name="gender" id="gender" />
+                    </div>
+                    <div class="checkboxgroup">
+                        <label for="Male">Male</label>
+                        <input type="checkbox" name="gender" id="gender" />
+                    </div>
+                    <div class="checkboxgroup">
+                        <label for="transgender">transgender</label>
+                        <input type="checkbox" name="transgender" id="gender" />
+                    </div>
+                   
+            </div>
+            <br><input type='submit' name='Submit' value='Submit' /> <input type="reset">
+        </fieldset>
+    </form> 
+
+
+    </section>
+    
+    <script type='text/javascript'>
+        // <![CDATA[
+            var pwdwidget = new PasswordWidget('thepwddiv','password');
+            pwdwidget.MakePWDWidget();
+            
+            var frmvalidator  = new Validator("register");
+            frmvalidator.EnableOnPageErrorDisplay();
+            frmvalidator.EnableMsgsTogether();
+            frmvalidator.addValidation("name","req","Please provide your name");
+            frmvalidator.addValidation("email","req","Please provide your email address");
+            frmvalidator.addValidation("email","email","Please provide a valid email address");
+            frmvalidator.addValidation("username","req","Please provide a username");
+            
+            frmvalidator.addValidation("password","req","Please provide a password");
+        // ]]>
+        </script>
+
+	<div id="clear"></div>
+	
+	<footer>
+			<p>Find your perfect match today!</p>
+	</footer>
+</body>
+</html>
