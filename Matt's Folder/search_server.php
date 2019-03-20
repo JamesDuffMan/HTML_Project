@@ -25,7 +25,17 @@ if (isset($_POST['beard_search'])) {
         $beard = $_POST['BeardBar'];
         $length = $_POST['Length'];
 
+        $option_check_query = "SELECT * FROM Profile WHERE Gender='$gender' AND RelStatus='$relationship' AND Beard='$beard'";
+        $result = $database->query($name_check_query);
 
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo $row["Name"];
+            }
+        } else {
+            echo "0 results";
+        }
 
     } else {
         // Values from form
@@ -33,7 +43,7 @@ if (isset($_POST['beard_search'])) {
 
         // Usage of LIKE allows for user-error
         $name_check_query = "SELECT * FROM Profile WHERE Name LIKE '%$nameOfUser%'";
-        $result = $database->query($sql);
+        $result = $database->query($name_check_query);
 
         if ($result->num_rows > 0) {
             // output data of each row
