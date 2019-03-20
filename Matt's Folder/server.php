@@ -5,7 +5,7 @@ $login = "admin";
 $password = " ";
 $errors = array();
 
-// Conneting to the actual database server
+// Connecting to the actual database server
 $database = new mysqli_connect($servername, $login, $password);
 
 // Checking connection to prevent errors
@@ -15,6 +15,7 @@ if ($connect->connect_error) {
     echo "Connected successfully";
 }
 
+// Registering the user
 if (isset($_POST['reg_user'])) {
 
     // All values from input on the form
@@ -50,5 +51,31 @@ if (isset($_POST['reg_user'])) {
 
     }
 }
+
+// Logging in the user
+if (isset($_POST['login_user'])) {
+    $username = mysqli_real_escape_string($database, $_POST['username']);
+    $password = mysqli_real_escape_string($database, $_POST['password']);
+  
+    if (empty($username)) {
+        array_push($errors, "Username is required");
+    }
+    if (empty($password)) {
+        array_push($errors, "Password is required");
+    }
+  
+    if (count($errors) == 0) {
+        $password = md5($password);
+        $query = "SELECT * FROM Users WHERE Username='$username' AND pass='$password'";
+        $results = mysqli_query($database, $query);
+        if (mysqli_num_rows($results) == 1) {
+          $_SESSION['username'] = $username;
+          $_SESSION['success'] = "You are now logged in";
+          header('location: index.php');
+        }else {
+            array_push($errors, "Wrong username/password combination");
+        }
+    }
+  }
 ?>
 
