@@ -1,0 +1,63 @@
+<?php include('options.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookings</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <nav>
+<div class="PageLinks">
+		<a href="Index.html">Home</a>
+		<a href="https://www.facebook.com/UL-Final-Exam-Tattoo-Website-179101206361639/?view_public_for=179101206361639">Contact us!</a>
+		<!--<a href="design.html">Jump To Designs!</a>-->
+		<!--<a href="">Placeholder for artists</a>-->
+		<a href="login2.html">Login/Register</a>
+		<a href="booking1.html">Booking</a>
+</div>
+</nav>
+</head>
+<body>
+  <div class="header">
+  	<h2>Options</h2>
+  </div>
+<!--<div class="floatLeft">-->
+<ol class="removeNumbers">
+	<li><img src="https://i.imgur.com/Yu6FK9L.jpg" alt="Dragon Tattoo" width="200" height="200"><p>Dragon</p></li>
+<!--</div>
+<div class="floatCenter">-->
+	<li><img src="https://i.imgur.com/v1m5LRC.jpg" alt="Tracer Tattoo" width="200" height="200"><p>Tracer</p></li>
+<!--</div>
+<div class="floatRight">-->
+	<li><img src="https://i.imgur.com/fSgutWS.jpg" alt="Triangle Tattoo" width="200" height="200"><p>Triangle</p></li>
+<!--</div>-->
+<p>Please select your tattoo:</p>
+ </ol>
+ <div class="paddingStuff">
+ <form action="booking1.php">
+ <select name="tattoos">
+    <option value="dragonTattoo">Dragon</option>
+    <option value="tracerTattoo">Tracer</option>
+    <option value="triangleTattoo">Triangle</option>
+  </select>
+  <br><br>
+  <button type="button" class="submitButton"><a href="booking2.html">Submit</a></button>
+ </form>
+ </div>
+<!--  <form method="post" action="booking1.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  		<label>Tattoo</label>
+  		<input type="text" name="tattoo" >
+  	</div>
+  	<div class="input-group">
+  		<label>Piercing</label>
+  		<input type="text" name="piercing">
+  	</div>
+  	<div class="input-group">
+  		<button type="submit" class="btn" name="book">Book</button>
+  	</div>
+  	<p>
+  		Click here to go back to the home page -><a href="index.php"> Go back</a>
+  	</p>
+  </form> -->
+</body>
+</html>
