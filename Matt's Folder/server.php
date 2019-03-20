@@ -6,11 +6,11 @@ $password = " ";
 $errors = array();
 
 // Conneting to the actual database server
-$database = new mysqli_connect($servername, $login, $password);
+$database = new mysqli($servername, $login, $password);
 
 // Checking connection to prevent errors
-if ($connect->connect_error) {
-    die("Connection failed: " . $connect->connect_error);
+if ($database->connect_error) {
+    die("Connection failed: " . $database->connect_error);
 } else {
     echo "Connected successfully";
 }
