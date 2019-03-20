@@ -19,9 +19,9 @@ if ($connect->connect_error) {
 if (isset($_POST['beard_search'])) {
     
     // Values from form
-    $nameOfUser = mysqli_real_escape_string($database, $_POST['name_user']);
+    $nameOfUser = $_POST["name_user"];
 
-    $name_check_query = "SELECT * FROM Profile WHERE Name='$nameOfUser'";
+    $name_check_query = "SELECT * FROM Profile WHERE Name LIKE '%$nameOfUser%'";
     $result = $database->query($sql);
 
     if ($result->num_rows > 0) {
@@ -33,6 +33,6 @@ if (isset($_POST['beard_search'])) {
         echo "0 results";
     }
 
-    
+
 }
 ?>
