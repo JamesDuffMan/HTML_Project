@@ -14,7 +14,7 @@
   <select name="Gender">
     <option value="Male">Male</option>
     <option value="Female">Female</option>
-	<option value="any">Either</option>
+<!--	<option value="any">Either</option> -->
   </select>
   <br><br>
   
@@ -28,7 +28,7 @@
 	<option value="compliacted">It's Complicated</option>
 	<option value="seperated">Seperated</option>
 	<option value="divorced">Divorced</option>
-	<option value="widowed">widowed</option>
+	<option value="widowed">Widowed</option>
   </select>
   <br><br>
 
@@ -44,28 +44,27 @@
 	<option value="viking">Viking</option>
 	<option value="any">Any</option>
 	<option value="none">None</option> -->
-	<option value="clearn_shaven">Clean Shaven</option>
-	<option value="stubble_s">Stubble(Short)</option>
-	<option value="stubble_m">Stubble(Medium)</option>
-	<option value="stubble_l">Stubble(Long)</option>
-	<option value="full-beard">Full Beard</option>
-	<option value="french_fork">French Fork</option>
-	<option value="ducktail">Ducktail</option>
-	<option value="ducktail">Ducktail</option>
-	<option value="circle_beard">Circle Beard</option>
-	<option value="goatee">Goatee</option>
-	<option value="extended_goatee">Extended Goatee</option>
-	<option value="imperial">Ismperial</option>
-	<option value="van_dyke">Van dyke</option>
-	<option value="anchor">Anchor</option>
-	<option value="balbo">Balbo</option>
-	<option value="mutton_chops">Mutton Chops</option>
-	<option value="friendly_mutton_chops">Friendly Mutton Chops</option>
-	<option value="verdi">Verdi</option>
-	<option value="garibaldi">Garibaldi</option>
-	<option value="dutch">Dutch</option>
-	<option value="bandholz">Bandholz</option>
-	<option value="other">Other</option>
+	<option value="Clean shaven">Clean Shaven</option>
+	<option value="Stubble(short)">Stubble(Short)</option>
+	<option value="Stubble(medium)">Stubble(Medium)</option>
+	<option value="Stubble(long)">Stubble(Long)</option>
+	<option value="Full beard">Full Beard</option>
+	<option value="French fork">French Fork</option>
+	<option value="Ducktail">Ducktail</option>
+	<option value="Circle beard">Circle Beard</option>
+	<option value="Goatee">Goatee</option>
+	<option value="Extended goatee">Extended Goatee</option>
+	<option value="Imperial">Ismperial</option>
+	<option value="Van dyke">Van dyke</option>
+	<option value="Anchor">Anchor</option>
+	<option value="Balbo">Balbo</option>
+	<option value="Mutton chops">Mutton Chops</option>
+	<option value="Friendly mutton chops">Friendly Mutton Chops</option>
+	<option value="Verdi">Verdi</option>
+	<option value="Garibaldi">Garibaldi</option>
+	<option value="Dutch">Dutch</option>
+	<option value="Bandholz">Bandholz</option>
+	<option value="Other">Other</option>
   </select>
   <br><br>
   
