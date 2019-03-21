@@ -20,9 +20,9 @@
   
   <h2> What Kind Of Relationship Do You Have</h2>
  <select name="Relationship">
-    <option value="Single">Single</option>
-    <option value="In a relationship">In A Relationship</option>
-    <option value="Engaged">Engaged</option>
+	<option value="Single">Single</option>
+	<option value="In a relationship">In A Relationship</option>
+	<option value="Engaged">Engaged</option>
 	<option value="Married">Married</option>
 	<option value="In an open relationship">In A Open Relationship</option>
 	<option value="It is complicated">It's Complicated</option>
@@ -73,8 +73,8 @@
     <option value="longBeard">Long</option>
     <option value="mediumBeard">Medium</option>
     <option value="shortBeard">Short</option>
-	<option value="any">Any</option>
-	<option value="none">None</option>
+    <option value="any">Any</option>
+    <option value="none">None</option>
   </select>
   <br><br>
  <!-- 
