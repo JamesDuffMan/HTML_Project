@@ -25,7 +25,7 @@ if (isset($_POST['beard_search'])) {
         $beard = $_POST['BeardBar'];
         $length = $_POST['Length'];
 
-        $option_check_query = "SELECT * FROM Profile WHERE Gender='$gender' AND RelStatus='$relationship' AND Beard='$beard'";
+        $option_check_query = "SELECT * FROM Preferences WHERE SeekingGender='$gender' AND SeekingRelType='$relationship' AND SeekingBeard='$beard'";
         $result = $database->query($name_check_query);
 
         if ($result->num_rows > 0) {
