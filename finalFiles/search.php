@@ -20,15 +20,15 @@
   
   <h2> What Kind Of Relationship Do You Have</h2>
  <select name="Relationship">
-    <option value="single">Single</option>
-    <option value="in_a_relationship">In A Relationship</option>
-    <option value="engaged">Engaged</option>
-	<option value="married">Married</option>
-	<option value="open_relationship">In A Open Relationship</option>
-	<option value="compliacted">It's Complicated</option>
-	<option value="seperated">Seperated</option>
-	<option value="divorced">Divorced</option>
-	<option value="widowed">Widowed</option>
+    <option value="Single">Single</option>
+    <option value="In a relationship">In A Relationship</option>
+    <option value="Engaged">Engaged</option>
+	<option value="Married">Married</option>
+	<option value="In an open relationship">In A Open Relationship</option>
+	<option value="It is complicated">It's Complicated</option>
+	<option value="Seperated">Seperated</option>
+	<option value="Divorced">Divorced</option>
+	<option value="Widowed">Widowed</option>
   </select>
   <br><br>
 
