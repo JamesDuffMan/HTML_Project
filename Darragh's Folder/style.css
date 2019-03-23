@@ -1,0 +1,87 @@
+.profile{
+    margin: 20px;
+}
+
+.profile-sidebar{
+    padding: 20px 10px;
+    background: #fff;
+}
+
+.profile-user-pic{
+    float: none;
+    margin: auto;
+    width: 75%;
+    height: 75%;
+    margin-bottom: -140%;
+}
+
+.profile-user-title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-user-name{
+    color: #5a73a1;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-user-motto{
+    text-transform: uppercase;
+    color: #5babd1;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-user-buttons{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+}
+.btn:last-child{
+    margin-right: 0;
+}
+
+.profile-user-menu{
+margin-top: 30px;
+}
+
+.profile-user-menu ul li a{
+color: #93a3b5;
+font-size: 14px;
+font-weight: 400;
+}
+.profile-user-menu ul li a i{
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.profile-user-menu ul li a i:hover{
+    background-color: #fafcfd;
+    color: #5babd1;
+}
+
+li.active a{
+color: #5babd1;
+background-color: #f6fafb;
+border-left: 2px solid #5babd1;
+margin-left: -3px;
+}
+
+#profile-content{
+    margin-top: 10%;
+    padding: 20px;
+    min-height:460px; 
+}
+
+
+
